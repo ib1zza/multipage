@@ -1,0 +1,168 @@
+body {
+    background: #131313;
+}
+
+.header__button {
+    border-color: #FDFDFD;
+}
+
+.header__button_active {
+    background: #D9D9D9;
+    border-color: #D9D9D9;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.main__imageBlock {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    max-width: 720px;
+    pointer-events: auto;
+}
+
+.main__imageBlock img {
+    width: 100%;
+}
+
+
+.circle {
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+    border: 2px solid #E9BB20;
+    cursor: pointer;
+}
+.circle__punkt { 
+    width: 26%;
+    top: 7.3%;
+    right: 30%;
+}
+.circle__skladPripasy {
+    width: 8%;
+    top: 20.3%;
+    right: 41.3%;
+}
+.circle__redOffice {
+    width: 17%;
+    top: 17.2%;
+    right: 15.7%;
+}
+.circle__pleteniOffice {
+    width: 26%;
+    top: 27.6%;
+    right: 20.6%;
+}
+.circle__pechnik {
+    width: 9%;
+    top: 43.7%;
+    right: 42.2%;
+}
+
+.circle__skladMaterials {
+    width: 12%;
+    top: 51.4%;
+    right: 18.2%;
+}
+.circle__tkach {
+    width: 8%;
+    top: 61.6%;
+    right: 41.8%;
+}
+.circle__itOffice {
+    width: 15%;
+    top: 67.7%;
+    right: 22.5%;
+}
+
+.modal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #131313;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+}
+
+.modal__image {
+    object-fit: cover;
+    width: 100%;
+    max-height: calc(100vh - 80px);
+}
+
+.tour__back {
+    color: white;
+    display: block;
+}
+
+.modal__bottom {
+    padding-top: 13px;
+    padding-left: 40px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal__title {
+    color: white;
+    font-weight: 800;
+    font-size: 44px;
+    letter-spacing: 0.12em;
+    font-family: "Alumni Sans", sans-serif;
+    line-height: 80%;
+}
+
+.modal {
+    display: none;
+}
+
+.modal__open {
+    display: block;
+}
+
+.tour__back__main {
+    position: fixed;
+    left: 20px;
+    top: 50%;
+}
+
+@media (max-width: 1000px) {
+    .modal__bottom { 
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+
+    .modal__image {
+        object-fit: cover;
+        width: 100%;
+        max-height: calc(100vh - 140px);
+    }    
+
+    .modal__title {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 800px) {
+.tour__back__main {
+    display: none;
+}
+
+}
+
+@media (max-width: 500px) {
+    .modal__title {
+        font-size: 20px;
+    }
+
+    .tour__back p {
+        font-size: 15px;
+    }
+}

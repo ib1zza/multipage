@@ -1,0 +1,31 @@
+.main {
+    margin-top: 20vh;
+
+    font-family: "Inter", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main img {
+    max-width: 250px;
+} 
+
+.heading { 
+    font-weight: 700;
+    font-size: 32px;
+    letter-spacing: 0.24em;
+    margin-bottom: 20px;
+    margin-top: 25px;
+    text-align: center;
+
+}
+ 
+
+
+.cart__back {
+    position: absolute;
+    left: 40px;
+    bottom: 40px;
+}

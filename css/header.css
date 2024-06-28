@@ -1,0 +1,169 @@
+
+.header {
+    display: flex;  
+    justify-content: space-between;
+    padding: 22px 40px;
+    font-family: "Inter", sans-serif;
+}
+
+.header__button {
+    background: #131313;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    border: 2px solid #131313; 
+    color: white;
+    text-decoration: none;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.24em;
+    height: 36px;
+}
+
+.header__button_active {
+    background: none;
+    color: #131313;
+}
+
+.header__button_catalog {
+    padding: 0 13px;
+}
+
+.header__button_brandbook { 
+    padding: 0 24px;
+}
+
+.header__button_posters {
+    padding: 0 10px;
+}
+
+.header__button_tour {
+    padding: 0 14px;
+
+}
+
+.header__button_cart {
+    padding: 0 25px; 
+}
+
+.header__button_cart img {
+    margin-top: -5px;
+}
+
+.header__button_home {
+    padding: 7px 16px;
+    height: 33px;
+    align-self: flex-end;
+} 
+
+
+.header__section {
+    display: flex;
+    gap: 13px;
+}
+
+.burger__button {
+    display: flex;
+    height: 33px;
+    padding: 8px 14px;
+    flex-direction: column; 
+    justify-content: space-between;
+    align-items: center;
+    width: 51px;  
+    border: none;
+    cursor: pointer; 
+}
+
+.burger__button span {
+    display: block;
+    background: white;
+    border-radius: 3px;
+    height: 3px;
+    width: 100%;
+    
+}
+
+.button_mobile {
+    display: none;
+
+}
+.header__burger {
+    display: none;
+}
+
+.burger__content {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    z-index: -1;
+
+}
+
+.burger__data {
+    background-color: #131313E0;
+    width: 80%;
+    min-width: 300px;
+    max-width: 700px;
+    border-radius: 45px;
+    font-size: 12px; 
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+}
+
+.burger__opened .burger__content{
+    opacity: 1;
+    pointer-events: auto;
+    z-index: 10;
+}
+
+.header__back {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    .header__section {
+        display: none;
+    }
+
+    .header__button {
+        border: none;
+    }
+
+    .button_mobile {
+        display: block;
+        padding: 0 16px;
+        height: 33px;
+    }
+
+    .header__burger {
+        display: block;
+    }
+
+    .header {
+        padding: 26px 30px;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .burger__content .header__button {
+        background: transparent;
+        border: none;
+    }
+
+    .header__back {
+        display: block;
+        margin-right: auto;
+    }
+}

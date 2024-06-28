@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/nullstyle.css">
+    <link rel="stylesheet" href="../../css/backButton.css">
+    <link rel="stylesheet" href="tour.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__section">
+            <a href="/" class="header__button header__button_home">
+                <img src="../../images/header/homeIcon.svg" alt="">
+            </a>
+
+            <a href="/pages/brandbook/brandbook.html" class="header__button header__button_brandbook">
+                БРЕНДБУК
+            </a>
+            
+            <a href="/pages/catalog/catalog.html" class="header__button header__button_catalog ">
+                КАТАЛОГ
+            </a>
+        </div>
+        <div class="header__section">
+            <a href="/pages/posters/posters.html" class="header__button header__button_posters">
+                ПОСТЕРЫ
+            </a>
+            <a href="/pages/tour/tour.html" class="header__button header__button_tour header__button_active">
+                ЭКСКУРСИЯ
+            </a>
+            <a href="/pages/cart/cart.html" class="header__button header__button_cart">
+                <img src="../../images/header/cart.svg" alt="cart">
+            </a>
+        </div>
+
+        <a href="/" class="header__back">
+            <img src="../../images/header/arrow_back_white.svg" alt="back">
+        </a>
+
+        <a href="/pages/cart/cart.html" class="header__button header__button_cart button_mobile">
+            <img src="../../images/header/cart.svg" alt="cart">
+        </a>
+        <div class="header__burger ">
+            <button class="burger__button header__button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="burger__content">
+                <div class="burger__data">
+                    
+                <a href="/" class="header__button ">
+                    БРЕНДБУК
+                </a>
+                
+                <a href="/" class="header__button ">
+                    КАТАЛОГ
+                </a>
+
+                <a href="/" class="header__button ">
+                    ПОСТЕРЫ
+                </a>
+                <a href="/" class="header__button ">
+                    ЭКСКУРСИЯ
+                </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+
+        <div class="main__imageBlock"> 
+            <img src="../../images/tour/tour.png" alt="tour">
+            <div class="circle circle__punkt"></div>
+            <div class="circle circle__skladPripasy"></div>
+            <div class="circle circle__redOffice"></div>
+            <div class="circle circle__pleteniOffice"></div>
+            <div class="circle circle__pechnik"></div>
+            <div class="circle circle__skladMaterials"></div>
+            <div class="circle circle__tkach"></div>
+            <div class="circle circle__itOffice"></div>
+        </div>
+ 
+    </main>
+
+
+
+    <div class="back__button tour__back tour__back__main">
+        <p>НАЗАД</p>
+        <img src="../../images/tour/arrow_back_white.svg" alt="">
+    </div>
+    <div class="modal"> 
+        <img src="#" class="modal__image" alt="tour">
+
+        <div class="modal__bottom">
+            <div class="back__button tour__back modal__close">
+                <p>НАЗАД</p>
+                <img src="../../images/tour/arrow_back_white.svg" alt="">
+            </div>
+
+            <div class="modal__title">
+                test
+            </div>
+        </div>
+    </div>
+    <script src="../../js/burger.js"></script>
+    <script src="../../js/tour.js"></script>
+</body>
+</html>

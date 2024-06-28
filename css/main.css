@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} 
+
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.main {
+  min-height: 100vh;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  gap: 20px;
+  height: 103px;
+  align-items: stretch;
+}
+
+.arrow_left {
+  flex-direction: row;
+}
+
+.arrow_right {
+  flex-direction: row-reverse;
+}
+
+.card__image img {
+  height: 100%; 
+}
+
+.card__image {
+  overflow: hidden;
+  border-radius: 60px;
+  border: 2px solid black;
+
+}
+
+.arrow {
+  align-self: center;
+}
+
+
+.arrow_left .arrow_text {
+  text-align: right;
+}
+
+.arrow_right .arrow_text {
+  text-align: left;
+}
+
+.arrow_text {
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 20%;
+}
+
+
+
+.heroImg {
+  width: 100%;
+}
+
+
+.card__brandbook, .card__posters, .card__catalog, .card__tour {
+  position: absolute;
+}
+
+.card__brandbook {
+  left: 90px;
+  top: 108px;
+}
+
+
+.card__posters {
+  right: 192px;
+  top: 133px;
+}
+
+.card__catalog {
+  left: 142px;
+  bottom: 66px;
+}
+
+.card__tour {
+  bottom: 118px;
+  right: 90px;
+}
+
+.image__catalog {
+  background: url("../images/catalog_botton_gray_mobile.png"); 
+  background-size: cover;
+  background-position: 0 -20px;
+  width: 103px;
+}
+
+@media screen and (max-width: 800px) {
+
+  .image__catalog {
+    height: 100%;
+    width: 100%;
+  }
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+    max-width: 400px;
+    width: 100%;
+  }
+
+  .card__brandbook, .card__posters, .card__catalog, .card__tour {
+    position: initial; 
+  }
+
+  .card {
+    height: 180px;
+  }
+
+  .arrowimg {
+    display: none;
+  }
+
+  .arrow_left {
+    flex-direction: column-reverse;
+  }
+
+  .arrow_right {
+    flex-direction: column;
+  }
+
+  .card__brandbook {
+    width: calc(70% - 12px);
+  }
+
+  .card__catalog {
+    width:  calc(30% - 12px)
+  }
+
+  .card__posters {
+    width:  calc(30% - 12px)
+  }
+
+  .card__tour {
+    width: calc(70% - 12px);
+
+  }
+
+  .main {
+    padding-top: 70px;
+    flex-direction: column-reverse;
+    gap: 60px;
+    justify-content: flex-end;  
+  }
+}
+
+@media screen and (max-width: 800px) { 
+  .cards {
+    padding: 0 20px;
+  }
+
+}

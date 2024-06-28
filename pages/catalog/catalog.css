@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+  
+  
+body {
+    font-family: "Inter", sans-serif;
+    min-height: 100vh;
+}
+  
+.main {
+    position: relative;
+    margin-top: 130px;
+}
+
+.catalog_main {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.bird_catalog1 {
+    top: 37%;
+    position: absolute;
+    left: 12%;
+    height: 30%;
+}
+
+.bird_catalog2 {
+    top: 16%;
+    position: absolute;
+    right: 23%;
+    height: 41%;
+}
+
+.nest {
+    position: absolute;  
+    pointer-events: none;
+}
+
+.nest__image {
+    width: 100%;
+    pointer-events: none;
+}
+
+.text__block {
+    pointer-events: auto;
+    color: inherit;
+    text-decoration: none;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    font-size: 26px;
+    letter-spacing: 0.12em;
+    font-family: "Alumni Sans", sans-serif;
+}
+
+.text__block__right {
+    text-align: right;
+}
+
+.text__block p {
+    line-height: 80%;
+}
+
+.nest_1 {
+    top: 48.3%;
+    left: 17.4%;
+    width: 14%;
+}
+
+.nest_1 .text__block { 
+    top: 57%;
+    right: 117%;
+}
+
+.nest_2 {
+    top: 41%;
+    left: 26.3%;
+    width: 19%;
+}
+
+.nest_2 .text__block { 
+    top: 46%;
+    left: 84%;
+}
+
+.nest_3 {
+    top: 41.3%;
+    left: 43.5%;
+    width: 25%;
+}
+
+.nest_3 .text__block { 
+    top: 65.8%;
+    left: 88.4%;
+}
+
+.nest_4 {
+    top: 68%;
+    left: 74.3%;
+    width: 22%;
+}
+
+.nest_4 .text__block { 
+    top: 38.8%;
+    right: 82.4%;
+}
+
+.catalog_main2 {
+    display: none;
+    width: 100%;
+    position: absolute;
+    bottom: -250%;
+}
+
+.catalog_back {
+    position: fixed;
+    bottom: 44px;
+    left: 40px; 
+}
+
+@media screen and (max-width: 800px) {
+    .catalog_main {
+        width: 145%;
+        margin-left: -21%;
+    }
+
+    .catalog_back  {
+        display: none;
+    }
+
+    .catalog_main2 {
+        display: block;
+    }
+
+    .bird_catalog1 {
+        top: 238%; 
+        left: 10%;
+        height: 37%;
+    }
+
+    .main__wrapper {
+        overflow: hidden;
+    }
+ 
+
+    .main {
+        margin-top: -10px;
+    }
+
+    .bird_catalog2 {
+        right: 9%;
+    }
+
+    .nest_4 {
+        top: 32%;
+        left: 17.3%;
+        width: 40%;
+    }
+
+    .nest_4 .text__block {
+        top: 50.8%;
+        right: 90.4%;
+    }
+
+    .nest_1 {
+        top: 48.3%;
+        left: 46.4%;
+        width: 27%;
+    }
+
+    .text__block {
+        font-size: 16px; 
+    }
+
+    .text__arrow {
+        width: 62px;
+    }
+
+    .nest_1 .text__block {
+        left: 116%;
+        top: 65%;
+        text-align: right;
+        right: unset;
+    }
+
+    .nest_1 .text__arrow {
+        transform: rotate(180deg);
+    }
+
+    .nest_2 {
+        top: 286%;
+        left: 15.3%;
+        width: 43%;
+    }
+
+    .nest_2 .text__block {
+        right: 85%;
+        top: 38%;
+        text-align: left;
+        left: unset;
+    }
+    .nest_2 .text__arrow {
+        transform: rotate(180deg);
+    }
+
+    .nest_3 {
+        top: 295.3%;
+        left: 30.5%;
+        width: 54%;
+    }
+
+    .nest_3 .text__block {
+        top: 52.8%;
+        left: 88.4%;
+    }
+}

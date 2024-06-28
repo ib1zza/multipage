@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+button, a {
+    color: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+    cursor: pointer;
+}
+
+button {
+    border: none;
+    background: none;
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main__imageBlock {
+    pointer-events: none;
+}
+ 
